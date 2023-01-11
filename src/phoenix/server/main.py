@@ -12,7 +12,7 @@ from phoenix.server.app import create_app
 logger = logging.getLogger(__name__)
 
 
-def _write_pid_file():
+def _write_pid_file() -> None:
     with open(_get_pid_file(), "w"):
         pass
 
